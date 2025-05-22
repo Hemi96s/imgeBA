@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="foo">123</div>
+<script>
+slider = new juxtapose.JXSlider('#foo',
+    [
+        {
+            src: '/01.png',
+            label: '2009',
+            credit: 'Image Credit'
+        },
+        {
+            src: '/02.png',
+            label: '2014',
+            credit: "Image Credit"
+        }
+    ],
+    {
+        animate: true,
+        showLabels: true,
+        showCredits: true,
+        startingPosition: "50%",
+        makeResponsive: true
+    });
+</script>
+</body>
+</html>
